@@ -1,0 +1,190 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LightTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Toolbar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- button,checkboxes -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- window background -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- text color -->
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <!--Nav Bar color -->
+        <!--<item name="android:navigationBarColor">@color/black</item>-->
+        <!--text color -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:colorControlHighlight">@color/light_maroon</item>
+        <item name="android:colorControlActivated">@color/medium_maroon</item>
+
+
+         <!--<item name="alertDialogTheme">@style/LightTheme.MyAlertDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/LightTheme.MyAlertDialogTheme</item>-->
+    </style>
+
+  <!--  <style name="LightTheme.MyAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>-->
+
+    <!-- Dark application theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark2</item>
+        <item name="colorAccent">@color/colorAccent2</item>
+        <item name="android:windowBackground">@color/darkGray</item>
+        <item name="android:textColorPrimary">@color/colorAccent2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="alertDialogTheme">@style/DarkTheme.MyAlertDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/DarkTheme.MyAlertDialogTheme</item>
+    </style>
+
+
+    <style name="DarkTheme.MyAlertDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">@color/darkGray</item>
+        <item name="colorAccent">@color/colorAccent2</item>
+    </style>
+
+    <style name="BottomNavBar">
+        <item name="android:textColorPrimary">?android:colorAccent</item>
+        <item name="android:textColorSecondary">?android:colorAccent</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:textColor">?android:colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListWithBottomNavBar">
+        <item name="android:textColor">?android:textColor</item>
+        <item name="android:layout_marginBottom">?android:attr/actionBarSize</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="ListWithBottomNavBar.SimpleList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+
+    <style name="NoDataCaseView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:textColor">?android:colorAccent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="AddFloatingActionButton">
+        <item name="android:layout_marginBottom">?android:attr/actionBarSize</item>
+        <item name="android:src">@drawable/add_new</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CheckFloatingActionButton">
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:src">@drawable/tick_check</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_marginBottom">100dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="SimpleButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:colorAccent</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:background">@null</item>
+        <item name="android:tint">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextSmallHeading">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:tint">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextMediumHeading">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:tint">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextLargeHeading">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:tint">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:background">@null</item>
+        <item name="android:tint">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextSmall">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:tint">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:background">@null</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:textColor">?android:textColor</item>
+        <item name="android:inputType">none</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="ListViewHeaders">
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:background">@drawable/list_shape</item>
+    </style>
+</resources>

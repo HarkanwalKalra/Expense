@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Expense</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="create_new_category">Create New Category</string>
+    <string name="emptyCategoryList">Empty List</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="stats">Stats</string>
+    <string name="history">History</string>
+    <string name="edit_budget">Edit Budget</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="theme">Theme</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="style">Style</string>
+    <string name="about">About</string>
+    <string name="info">Info</string>
+    <string name="help">Help</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="categoryName">Name</string>
+    <string name="categoryBudget">Budget</string>
+    <string name="category">Category</string>
+</resources>

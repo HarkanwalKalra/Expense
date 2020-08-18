@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowExpense">
+
+    <TextView
+        android:id="@+id/expense_category_textview"
+        style="@style/TextLargeHeading"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="category"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/expense_amount_textview"
+        style="@style/Text"
+        android:paddingLeft="20dp"
+        android:text="$"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/expense_category_textview"
+        app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+    <TextView
+        android:id="@+id/expense_date_textview"
+        style="@style/TextMediumHeading"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/expense_category_textview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/expense_amount_textview"/>
+
+    <TextView
+        android:id="@+id/expense_note_textview"
+        style="@style/TextSmall"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:text="Note"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/expense_amount_textview"
+        />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        style="@style/ImageButton"
+        android:padding="20dp"
+        android:src="@drawable/ic_delete_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/edit_button"
+        style="@style/ImageButton"
+        android:padding="20dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/delete_button"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

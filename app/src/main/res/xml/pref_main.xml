@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/style">
+        <ListPreference
+            android:dialogTitle="@string/theme"
+            android:entries="@array/theme_array"
+            android:entryValues="@array/theme_array_count"
+            android:key="@string/theme"
+            android:title="@string/theme" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/info">
+        <Preference
+            android:title="@string/about"
+            android:key="@string/about"/>
+        <Preference
+            android:key="@string/help"
+            android:title="@string/help" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

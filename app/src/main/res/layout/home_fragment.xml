@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/ProgressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/no_expense_textview"
+        style="@style/NoDataCaseView"
+        android:text="No Expenses"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/home_fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:elevation="2dp"
+        android:background="@drawable/rect_elevation"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:layout_collapseMode="parallax"
+        android:nestedScrollingEnabled="true"
+        >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintRight_toLeftOf="@id/total_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <TextView
+            android:id="@+id/amount_textview"
+            style="@style/TextMediumHeading"
+            android:text="Amount"
+            android:padding="10dp"
+            app:layout_constraintLeft_toRightOf="@id/pie_chart"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/total_amount"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toRightOf="@id/pie_chart"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amount_textview" />
+
+        <TextView
+            android:id="@+id/total_items"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="items = 10"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/total_amount"
+            app:layout_constraintEnd_toEndOf="@id/total_amount"
+            app:layout_constraintTop_toBottomOf="@id/total_amount" />
+
+        <ImageView
+            android:id="@+id/categories_button"
+            style="@style/ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_label_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:elevation="6dp"
+        android:background="?android:colorAccent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_goneMarginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/home_fragment_header"
+        />
+
+    <TextView
+        android:id="@+id/listview_header"
+        style="@style/ListViewHeaders"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ListView
+        android:id="@+id/today_list"
+        style="@style/ListWithBottomNavBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listview_header"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newfab"
+        style="@style/AddFloatingActionButton"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
